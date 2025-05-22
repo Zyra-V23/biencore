@@ -42,3 +42,6 @@ Reverse Engineer
 
 Enjoy full access to every endpoint, significantly increased file sizes, and substantially elevated scan limits. The Reverse Engineer plan empowers you to seamlessly integrate Malcore into your diverse solutions without encountering any limitations.
 
+Automated File Triage
+
+Upload a suspicious file for rapid automated analysis. We’ll extract IOCs, and summarize behavior using our AI engine. Fast, affordable, and no strings attached. This upload accepts raw files, and zip files (password or no password). The password must be infected. 
