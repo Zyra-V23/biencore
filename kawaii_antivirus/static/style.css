@@ -1,0 +1,44 @@
+/* Import a cute, rounded Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #FFF0F5; /* Lavender Blush */
+    color: #333333; /* Dark Gray */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: #FFFFFF; /* White */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5); /* Hot Pink shadow */
+    width: 80%;
+    max-width: 600px;
+}
+
+header h1 {
+    color: #FF69B4; /* Hot Pink */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.upload-section, .results-section {
+    border: 2px dashed #FFB6C1; /* Light Pink */
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #FFFAFB; /* A very light pink, almost white */
+}
+
+.upload-section h2, .results-section h2 {
+    color: #FF69B4; /* Hot Pink */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}

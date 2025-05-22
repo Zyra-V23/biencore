@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyan Nyan Antivirus ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- The path for style.css (`/static/style.css`) assumes it will be at the root of the `dist` directory
+         (e.g., `frontend/dist/style.css`) and Actix is configured to serve files from `dist` under the `/static` prefix.
+         Current Actix backend setup: `.service(fs::Files::new("/static", "../frontend/dist")...)`
+         This means `frontend/dist/style.css` will be available at URL `/static/style.css`.
+    -->
+    <!-- The path for style.css (`/style.css`) assumes it will be at the root of the `dist` directory,
+         served by Actix. If Actix serves static files with a prefix (e.g., /static/style.css),
+         this path needs to be adjusted. Based on previous Actix setup, it serves files from `../frontend/dist`
+         under `/static` prefix, and `/` for index.html.
+         So, if style.css is in `dist`, it should be accessible as `/static/style.css`.
+         Let's adjust this to `/static/style.css` to match the existing Actix setup.
+         Alternatively, if style.css is at the root of `dist` and Actix also serves `/` from dist root,
+         then `/style.css` might work. The previous backend setup was:
+         .service(fs::Files::new("/static", "../frontend/dist").show_files_listing())
+         .route("/", web::get().to(serve_index)) // Serves index.html
+         This means style.css in `dist` should be available via `/static/style.css`.
+    -->
+    <script type="module">
+        // The path './frontend.js' assumes that after `wasm-pack build --out-dir ./dist` (run from frontend dir),
+        // the `index.html` (this file, after being copied to `dist`) will be at the root of `dist`,
+        // and the JS loader and WASM file will also be at the root of `dist`.
+        import init from './frontend.js'; // Path relative to index.html in dist
+
+        async function run() {
+            await init();
+        }
+        run();
+    </script>
+</head>
+<body>
+    <!-- Yew app will mount here -->
+</body>
+</html>

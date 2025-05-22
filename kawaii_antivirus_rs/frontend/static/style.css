@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #FFF0F5; /* Lavender Blush */
+    color: #333333; /* Dark Gray */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Layout Components */
+.container {
+    width: 90%;
+    max-width: 960px; /* Max width for larger screens */
+    margin: 20px auto; /* Centering and some space from top/bottom */
+    padding: 20px;
+    background-color: #FFFFFF; /* White background for the content area */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3); /* Hot Pink shadow, softer */
+}
+
+.header {
+    background-color: #FFB6C1; /* Light Pink */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0; /* Rounded top corners if container has its own distinct background */
+}
+
+.header h1 { /* Specific to h1 within .header if needed */
+    color: white; /* Ensure text is white, overriding general h1 if any */
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.upload-section,
+.results-section {
+    border: 2px dashed #FFB6C1; /* Light Pink */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #FFFAFB; /* A very light pink, almost white */
+    text-align: center;
+}
+
+.upload-section h2, 
+.results-section h2 {
+    color: #FF69B4; /* Hot Pink */
+    font-size: 1.8em;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777; /* Gray for footer text */
+}
+
+/* Theme Specifics */
+h1, h2, h3, h4, h5, h6 {
+    color: #FF69B4; /* Hot Pink for headings */
+    margin-bottom: 0.5em; /* Spacing below headings */
+}
+
+button, .button { /* Also adding a .button class for non-button elements styled as buttons */
+    background-color: #FF69B4; /* Hot Pink */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Cute rounded border */
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background-color: #FF1493; /* Deep Pink on hover */
+}
+
+/* Utility for placeholder text */
+.placeholder-text {
+    color: #aaa;
+    font-style: italic;
+}
