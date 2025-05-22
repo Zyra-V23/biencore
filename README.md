@@ -37,3 +37,8 @@ Uncover valuable information about domains and their associated attributes. Our 
 Advanced File Analysis
 
 Our cutting-edge technology performs in-depth analysis of files, providing detailed insights into their structure, behavior, and potential threats. Gain a comprehensive understanding of your files like never before.
+
+Reverse Engineer
+
+Enjoy full access to every endpoint, significantly increased file sizes, and substantially elevated scan limits. The Reverse Engineer plan empowers you to seamlessly integrate Malcore into your diverse solutions without encountering any limitations.
+
